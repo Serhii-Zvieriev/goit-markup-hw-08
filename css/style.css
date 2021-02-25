@@ -17,6 +17,7 @@ h3 {
 .link-decoration {
   text-decoration: none;
   font-family: inherit;
+  font-style: normal;
 }
 
 .list-decoration {
@@ -53,7 +54,6 @@ h3 {
 
 /* ======== HEADER TEXT ======== */
 .header-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -77,7 +77,6 @@ h3 {
 
 /* ======== HEROTEXT ======== */
 .hero-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -90,22 +89,21 @@ h3 {
 .hero-btn {
   background-color: var(--accent-text-color);
   color: #ffffff;
+  /* font-family: inherit; */
   cursor: pointer;
 }
 /* ======== END HERO TEXT ======== */
 
 /* ======== ОСОБЕННОСТИ ======== */
 .features-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1ю14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -115,7 +113,6 @@ h3 {
 
 /* ======== Чем мы занимаемся ======== */
 .work-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -123,3 +120,53 @@ h3 {
   letter-spacing: 0.03em;
 }
 /* ======== END Чем мы занимаемся ======== */
+
+/* ======== Наша команда ======== */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.teamets-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.teamets-post-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+/* ======== END Наша команда ======== */
+
+/* ======== FOOTER ======== */
+.map-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-contact-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71x;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.map-text:hover,
+.map-text:focus,
+.footer-contact-text:hover,
+.footer-contact-text:focus {
+  color: var(--accent-text-color);
+}
+/* ======== END FOOTER ======== */
