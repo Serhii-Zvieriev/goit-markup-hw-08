@@ -9,6 +9,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2,
+h3 {
+  color: var(--secondary-text-color);
+}
+
 .link-decoration {
   text-decoration: none;
   font-family: inherit;
@@ -18,8 +23,13 @@ body {
   list-style-type: none;
 }
 
-.footer-bg {
+.footer-bg,
+.hero-bg {
   background-color: #2f303a;
+}
+
+.hide-text {
+  opacity: 0;
 }
 
 /* ======== Логотип ======== */
@@ -55,4 +65,61 @@ body {
 .header-text:focus {
   color: var(--accent-text-color);
 }
+
+.contact-color {
+  color: var(--main-text-color);
+}
+
+.link-color {
+  color: var(--accent-text-color);
+}
 /* ======== END HEADER TEXT ======== */
+
+/* ======== HEROTEXT ======== */
+.hero-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-btn {
+  background-color: var(--accent-text-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+/* ======== END HERO TEXT ======== */
+
+/* ======== ОСОБЕННОСТИ ======== */
+.features-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1ю14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ======== END ОСОБЕННОСТИ ======== */
+
+/* ======== Чем мы занимаемся ======== */
+.work-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ======== END Чем мы занимаемся ======== */
