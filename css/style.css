@@ -2,6 +2,10 @@
   --main-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --footer-bg-color: #2f303a;
+  --footer-contact-text-color: rgba(255, 255, 255, 0.6);
+  --portfolio-btn-color: #f5f4fa;
 }
 
 body {
@@ -27,11 +31,21 @@ h3 {
 
 .footer-bg,
 .hero-bg {
-  background-color: #2f303a;
+  background-color: var(--footer-bg-color);
 }
 
-.hide-text {
-  opacity: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ======== Логотип ======== */
@@ -49,7 +63,7 @@ h3 {
 }
 
 .logo-light {
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 /* ======== END Логотип ======== */
 
@@ -60,11 +74,6 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-}
-
-.header-text:hover,
-.header-text:focus {
-  color: var(--accent-text-color);
 }
 
 .contact-color {
@@ -84,12 +93,12 @@ h3 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .hero-btn {
   background-color: var(--accent-text-color);
-  color: #ffffff;
+  color: var(--white-text-color);
   /* font-family: inherit; */
   cursor: pointer;
 }
@@ -150,16 +159,17 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .footer-contact-text {
   font-size: 14px;
-  line-height: 1.71x;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-text-color);
 }
-
+.header-text:hover,
+.header-text:focus,
 .map-text:hover,
 .map-text:focus,
 .footer-contact-text:hover,
@@ -170,7 +180,7 @@ h3 {
 
 /* ======== PORTFOLIO BUTTON ======== */
 .portfolio-btn {
-  background-color: #f5f4fa;
+  background-color: var(--portfolio-btn-color);
   border-radius: 4px;
   border: none;
   font-weight: 500;
@@ -184,7 +194,7 @@ h3 {
 
 .portfolio-btn:focus {
   background-color: var(--accent-text-color);
-  color: #ffffff;
+  color: var(--white-text-color);
   /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;*/
