@@ -16,101 +16,124 @@
 
 <body>
     <!-- HEADER -->
-    <header>
-        <nav>
-            <a lang="en" class="logo link-decoration " href="./index.html">Web<span class="logo-dark">Studio</span></a>
-            <ul>
-                <li class="list-decoration"><a class="link-decoration header-text" href="./index.html">Студия</a>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a lang="en" class="logo link-decoration header-logo" href="./index.html">Web<span
+                        class="logo-dark">Studio</span></a>
+                <ul>
+                    <li><a class="link-decoration header-text" href="./index.html">Студия</a></li>
+                    <li><a class="link-decoration header-text link-color" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="link-decoration header-text" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-contact">
+                <li><a class="link-decoration header-text contact-color"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="list-decoration"><a class="link-decoration header-text link-color" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="list-decoration"><a class="link-decoration header-text" href="">Контакты</a></li>
+                <li><a class="link-decoration header-text contact-color" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li class="list-decoration"><a class="link-decoration header-text contact-color"
-                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="list-decoration"><a class="link-decoration header-text contact-color" href="tel:+380961111111">+38
-                    096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <!-- MAIN -->
     <main>
-        <section>
+        <section class="section">
             <h1 class="visually-hidden">Портфолио</h1>
-            <ul>
-                <li class="list-decoration"><button class="portfolio-btn" type="button">Все</button></li>
-                <li class="list-decoration"><button class="portfolio-btn" type="button">Веб-сайты</button></li>
-                <li class="list-decoration"><button class="portfolio-btn" type="button">Приложения</button></li>
-                <li class="list-decoration"><button class="portfolio-btn" type="button">Дизайн</button></li>
-                <li class="list-decoration"><button class="portfolio-btn" type="button">Маркетинг</button></li>
-            </ul>
+            <div class="container">
+                <ul class="portfolio-btn-list">
+                    <li class="list-decoration"><button class="portfolio-btn" type="button">Все</button></li>
+                    <li class="list-decoration"><button class="portfolio-btn" type="button">Веб-сайты</button></li>
+                    <li class="list-decoration"><button class="portfolio-btn" type="button">Приложения</button></li>
+                    <li class="list-decoration"><button class="portfolio-btn" type="button">Дизайн</button></li>
+                    <li class="list-decoration"><button class="portfolio-btn" type="button">Маркетинг</button></li>
+                </ul>
+            </div>
            
             <!-- Список работ -->
             <h2 class="visually-hidden">Проекты</h2>
-            <ul>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-1.jpg" alt="Технокряк" width="370" height="294">
-                    <h3 class="portfolio-card-title">Технокряк</h3>
-                    <p class="portfolio-card-text">Веб-сайт</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                    <h3 class="portfolio-card-title">Постер<span lang="en">New Orlean vs Golden Star</span></h3>
-                    <p class="portfolio-card-text">Дизайн</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-3.jpg" alt="Ресторан Seafood" width="370" height="294">
-                    <h3 class="portfolio-card-title">Ресторан<span lang="en">Seafood</span></h3>
-                    <p class="portfolio-card-text">Приложение</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-4.jpg" alt="Проект Prime" width="370" height="294">
-                    <h3 class="portfolio-card-title">Проект <span lang="en">Prime</span></h3>
-                    <p class="portfolio-card-text">Маркетинг</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-5.jpg" alt="Проект Boxes" width="370" height="294">
-                    <h3 class="portfolio-card-title">Проект <span lang="en">Boxes</span></h3>
-                    <p class="portfolio-card-text">Приложение</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                    <h3 class="portfolio-card-title" lang="en">Inspiration has no Borders</h3>
-                    <p class="portfolio-card-text">Веб-сайт</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-7.jpg" alt="Издание Limited Edition" width="370" height="294">
-                    <h3 class="portfolio-card-title">Издание <span lang="en">Limited Edition</span></h3>
-                    <p class="portfolio-card-text">Дизайн</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-8.jpg" alt="Проект LAB" width="370" height="294">
-                    <h3 class="portfolio-card-title">Проект <span lang="en">LAB</span></h3>
-                    <p class="portfolio-card-text">Маркетинг</p>
-                </li>
-                <li class="list-decoration">
-                    <img src="./images/portfolio/img-9.jpg" alt="Growing Business" width="370" height="294">
-                    <h3 class="portfolio-card-title" lang="en">Growing Business</h3>
-                    <p class="portfolio-card-text">Приложение</p>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="portfolio-card">
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-1.jpg" alt="Технокряк" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title">Технокряк</h3>
+                            <p class="portfolio-card-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title">Постер<span lang="en">New Orlean vs Golden Star</span></h3>
+                            <p class="portfolio-card-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-3.jpg" alt="Ресторан Seafood" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title">Ресторан<span lang="en">Seafood</span></h3>
+                            <p class="portfolio-card-text">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-4.jpg" alt="Проект Prime" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title">Проект <span lang="en">Prime</span></h3>
+                            <p class="portfolio-card-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-5.jpg" alt="Проект Boxes" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title">Проект <span lang="en">Boxes</span></h3>
+                            <p class="portfolio-card-text">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-6.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title" lang="en">Inspiration has no Borders</h3>
+                            <p class="portfolio-card-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-7.jpg" alt="Издание Limited Edition" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title">Издание <span lang="en">Limited Edition</span></h3>
+                            <p class="portfolio-card-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-8.jpg" alt="Проект LAB" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title">Проект <span lang="en">LAB</span></h3>
+                            <p class="portfolio-card-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="list-decoration">
+                        <img src="./images/portfolio/img-9.jpg" alt="Growing Business" width="370" height="294">
+                        <div class="card-description">
+                            <h3 class="portfolio-card-title" lang="en">Growing Business</h3>
+                            <p class="portfolio-card-text">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer-bg">
-        <a lang="en" class="logo link-decoration " href="./index.html">Web<span class="logo-light">Studio</span></a>
-        <address>
-            <ul>
-                <li class="list-decoration"><a class="link-decoration map-text" href="https://goo.gl/maps/1fz9XVwSa68mjQCN8"
-                        target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="list-decoration"><a class="link-decoration footer-contact-text"
-                        href="mailto:info@example.com">info@example.com</a></li>
-                <li class="list-decoration"><a class="link-decoration footer-contact-text" href="tel:+380991111111">+38 099
-                        111 11 11</a></li>
-            </ul>
-        </address>
-    
+    <footer class="footer">
+        <div class="footer-container">
+            <a lang="en" class="logo link-decoration" href="./index.html">Web<span class="logo-light">Studio</span></a>
+            <address class="address">
+                <ul>
+                    <li><a class="link-decoration map-text" href="https://goo.gl/maps/1fz9XVwSa68mjQCN8" target="_blank"
+                            rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a class="link-decoration footer-contact-text" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li><a class="link-decoration footer-contact-text" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
