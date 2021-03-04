@@ -8,6 +8,39 @@
   --portfolio-btn-color: #f5f4fa;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+/* .link {
+  text-decoration: none;
+} */
+
+.list {
+  list-style: none;
+}
+
+/* .address {
+  font-style: normal;
+} */
+
 body {
   color: var(--main-text-color);
   font-family: "Roboto", sans-serif;
@@ -22,15 +55,28 @@ h3 {
 .link-decoration {
   text-decoration: none;
   font-family: inherit;
-  font-style: normal;
+  /* font-style: normal; */
 }
 
-.list-decoration {
+/* .list-decoration {
   list-style-type: none;
+} */
+
+.container {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer-bg,
-.hero-bg {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.footer-bg {
   background-color: var(--footer-bg-color);
 }
 
@@ -50,6 +96,10 @@ h3 {
 
 /* ======== Логотип ======== */
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -60,6 +110,8 @@ h3 {
 
 .logo-dark {
   color: var(--secondary-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-light {
@@ -67,7 +119,7 @@ h3 {
 }
 /* ======== END Логотип ======== */
 
-/* ======== HEADER TEXT ======== */
+/* ======== HEADER ======== */
 .header-text {
   font-weight: 500;
   font-size: 14px;
@@ -83,14 +135,49 @@ h3 {
 .link-color {
   color: var(--accent-text-color);
 }
-/* ======== END HEADER TEXT ======== */
+
+.header-nav,
+.header-nav ul,
+.header-contact {
+  display: flex;
+}
+.header-nav li:not(:last-child),
+.header-contact li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contact {
+  margin-left: auto;
+}
+
+.header-nav li > a,
+.header-contact a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* background-color: aquamarine; */
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+/* ======== END HEADER ======== */
 
 /* ======== HEROTEXT ======== */
+.hero {
+  background-color: var(--footer-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+}
+
 .hero-text {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
@@ -101,6 +188,22 @@ h3 {
   color: var(--white-text-color);
   /* font-family: inherit; */
   cursor: pointer;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  border: transparent;
+  border-radius: 4px;
+}
+
+.hero-btn-text {
+  padding: 10px 32px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 /* ======== END HERO TEXT ======== */
 
