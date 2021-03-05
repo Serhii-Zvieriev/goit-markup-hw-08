@@ -63,7 +63,7 @@ h3 {
 } */
 
 .container {
-  display: flex;
+  /* display: flex; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -72,7 +72,7 @@ h3 {
 }
 
 .section {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 
@@ -135,6 +135,7 @@ h3 {
   color: var(--accent-text-color);
 }
 
+header .container,
 .header-nav,
 .header-nav ul,
 .header-contact {
@@ -172,7 +173,8 @@ h3 {
 }
 
 .hero-text {
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -221,6 +223,10 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.features {
+  padding-top: 94px;
 }
 
 .features-list {
@@ -310,6 +316,10 @@ h3 {
   /* border: 1px solid teal; */
 }
 
+.team {
+  background-color: #f5f4fa;
+}
+
 /* ======== END Наша команда ======== */
 
 /* ======== FOOTER ======== */
@@ -359,10 +369,15 @@ h3 {
 /* ======== END FOOTER ======== */
 
 /* ======== PORTFOLIO BUTTON ======== */
+.portfolio {
+  margin-top: 94px;
+}
+
 .portfolio-btn {
   background-color: var(--portfolio-btn-color);
   border-radius: 4px;
   border: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -407,10 +422,11 @@ h3 {
 }
 
 .portfolio-btn-list {
+  justify-content: center;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 34px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 50px;
 }
 
 .portfolio-btn-list li:not(:last-child) {
@@ -431,12 +447,12 @@ h3 {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-
-  border-bottom: 1px solid #eeeeee;
 }
 
 .card-description {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: transparent;
 }
 
 .card-description h3 {
