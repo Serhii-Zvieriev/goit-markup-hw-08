@@ -55,15 +55,14 @@ h3 {
 .link-decoration {
   text-decoration: none;
   font-family: inherit;
-  /* font-style: normal; */
 }
 
-/* .list-decoration {
-  list-style-type: none;
-} */
+.link-flex {
+  display: flex;
+  align-items: center;
+}
 
 .container {
-  /* display: flex; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -138,7 +137,8 @@ h3 {
 header .container,
 .header-nav,
 .header-nav ul,
-.header-contact {
+.header-contact,
+.header li {
   display: flex;
 }
 .header-nav li:not(:last-child),
@@ -152,10 +152,15 @@ header .container,
 
 .header-nav li > a,
 .header-contact a {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  text-align: center;
   /* background-color: aquamarine; */
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header {
@@ -164,12 +169,29 @@ header .container,
 /* ======== END HEADER ======== */
 
 /* ======== HERO ======== */
+
+/* .section .hero {
+  display: flex;
+  justify-content: center;
+} */
+
 .hero {
-  background-color: var(--footer-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
+  max-width: 1600px;
 
   text-align: center;
+  justify-content: center;
+
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/hero.jpg);
 }
 
 .hero-text {
@@ -240,6 +262,19 @@ header .container,
   margin-top: 30px;
   /* background-color: turquoise; */
 }
+
+.features-item-icon {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
 /* ======== END ОСОБЕННОСТИ ======== */
 
 /* ======== Чем мы занимаемся ======== */
@@ -293,6 +328,8 @@ header .container,
 }
 
 .teamets-post-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -305,19 +342,109 @@ header .container,
   margin-top: -30px;
 }
 
-.team-list li {
+.team-list > li {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  /* border: 1px solid teal; */
 }
 
 .team {
   background-color: #f5f4fa;
 }
 
+.social-networks-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 32px;
+}
+
+.social-networks-list > li {
+  width: 44px;
+  height: 44px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* background-color: cyan; */
+}
+
+.social-networks-icon {
+  fill: #afb1b8;
+}
+
+.social-networks:hover,
+.social-networks:focus {
+  background-color: var(--accent-text-color);
+}
+
+.social-networks:hover .social-networks-icon,
+.social-networks:focus .social-networks-icon {
+  fill: #ffffff;
+}
+
 /* ======== END Наша команда ======== */
+
+/* ======== Постоянные клиенты ======== */
+.client-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.client-icon {
+  fill: #afb1b8;
+}
+
+.clent-icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list a {
+  display: flex;
+
+  width: 170px;
+  height: 90px;
+}
+
+.clent-icon-border:hover,
+.clent-icon-border:focus {
+  border: 1px solid var(--accent-text-color);
+}
+
+.clent-icon-border:hover .client-icon,
+.clent-icon-border:focus .client-icon {
+  fill: var(--accent-text-color);
+}
+
+/* ======== END Постоянные клиенты ======== */
 
 /* ======== FOOTER ======== */
 .footer {
@@ -330,8 +457,8 @@ header .container,
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  margin-right: 70px;
 }
 
 .address {
@@ -341,6 +468,10 @@ header .container,
 .address li:not(:last-child) {
   margin-bottom: 9px;
 }
+
+/* .address li {
+  display: flex;
+} */
 
 .map-text {
   font-size: 14px;
@@ -362,6 +493,15 @@ header .container,
 .footer-contact-text:hover,
 .footer-contact-text:focus {
   color: var(--accent-text-color);
+}
+
+.ft-flex {
+  display: flex;
+}
+
+.join {
+  width: 206px;
+  height: 80px;
 }
 /* ======== END FOOTER ======== */
 
