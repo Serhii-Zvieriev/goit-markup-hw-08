@@ -603,6 +603,11 @@ header .container,
   margin-top: 30px;
 }
 
+.portfolio-card a {
+  text-decoration: none;
+  font-family: inherit;
+}
+
 .card-description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -623,6 +628,7 @@ header .container,
   font-size: 16px;
   line-height: 1.97;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
 .list-decoration:hover,
