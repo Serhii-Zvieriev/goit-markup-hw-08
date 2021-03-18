@@ -744,7 +744,7 @@ header .container,
 }
 
 .overlay-text {
-  padding: 24px 63px;
+  padding: 63px 24px;
   overflow: auto;
 
   font-weight: 400;
