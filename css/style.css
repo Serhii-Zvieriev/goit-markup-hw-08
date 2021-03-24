@@ -771,12 +771,17 @@ header .container,
   z-index: 1;
   width: 528px;
   height: 580px;
+  padding: 40px;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   background-color: #fff;
+}
+
+.link-agreement {
+  color: var(--accent-text-color);
 }
 
 .is-hidden {
@@ -800,6 +805,116 @@ header .container,
 
   background-color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-tytle {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--main-text-color);
+}
+
+textarea {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input-icon {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon-person,
+.icon-phone,
+.icon-email {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+input {
+  padding: 12px 0;
+  padding-left: 42px;
+  width: 100%;
+}
+
+input[name="user-name"]:focus,
+input[name="user-phone"]:focus,
+input[name="user-email"]:focus,
+textarea[name="user-comment"]:focus {
+  border: 1px solid var(--accent-text-color);
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.icon-person,
+.icon-phone,
+.icon-email {
+  fill: var(--secondary-text-color);
+}
+
+input[name="user-name"]:focus + .icon-person,
+input[name="user-phone"]:focus + .icon-phone,
+input[name="user-email"]:focus + .icon-email {
+  fill: var(--accent-text-color);
+}
+
+.modal-btn {
+  align-self: center;
+  padding: 10px 55px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.check-img {
+  display: block;
+  height: 100%;
+  background-image: url(../images/svg/check-off.svg);
 }
 
 /* ======== END МОДАЛЬНОЕ ОКНО  ======== */ ;
