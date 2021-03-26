@@ -515,7 +515,7 @@ header .container,
   padding-left: 15px;
   padding-right: 15px;
   /* margin-left: auto; */
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 
 .address {
@@ -559,12 +559,13 @@ header .container,
 .ft-flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .join {
   width: 206px;
   height: 80px;
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .join p {
@@ -947,9 +948,13 @@ textarea::placeholder {
 }
 
 .modal input {
+  height: 40px;
   padding: 12px 0;
   padding-left: 42px;
   width: 100%;
+}
+.modal textarea {
+  height: 120px;
 }
 
 input[name="user-name"],
@@ -1018,6 +1023,7 @@ input[name="user-email"]:focus + .icon-email {
 
 .user-agreement {
   display: flex;
+  align-items: center;
 
   font-size: 14px;
   line-height: 1.71;
