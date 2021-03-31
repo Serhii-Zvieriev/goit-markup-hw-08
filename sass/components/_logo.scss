@@ -6,17 +6,15 @@
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 
-  &-dark {
+  &--dark {
     color: var(--secondary-text-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   &-light {
     color: var(--white-text-color);
   }
 
-  .header-logo {
+  &--in-header {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-right: 93px;

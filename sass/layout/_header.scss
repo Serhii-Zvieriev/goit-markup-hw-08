@@ -1,48 +1,53 @@
-.header-text {
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav,
+.header__container,
+.header-nav__list,
+.header-contact,
+.header-nav__item,
+.header-contact__item {
+  display: flex;
+}
+
+.header-nav__link,
+.header-contact__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-color {
+.header-nav__link,
+.header-contact__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.header-nav__link:hover,
+.header-nav__link:focus,
+.header-contact__link:hover,
+.header-contact__link:focus {
+  color: var(--accent-text-color);
+  // outline-width: 2px;
+  // outline-color: var(--accent-text-color);
+}
+
+.header-contact--text-color {
   color: var(--main-text-color);
 }
 
-.link-color {
-  color: var(--accent-text-color);
-}
-
-.header-nav li {
+.header-nav__item,
+.header-contact__item {
   position: relative;
 }
 
-.link-color::after {
-  content: "";
-
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-
-  height: 4px;
-  width: 100%;
-
-  background: var(--accent-text-color);
-  border-radius: 2px;
-}
-
-header .container,
-.header-nav,
-.header-nav ul,
-.header-contact,
-.header li {
-  display: flex;
-}
-.header-nav li:not(:last-child),
-.header-contact li:not(:last-child) {
+.header-nav__item:not(:last-child),
+.header-contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -50,18 +55,28 @@ header .container,
   margin-left: auto;
 }
 
-.header-nav li > a,
-.header-contact a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-align: center;
-}
-
-.contact-icon {
+.header-contact--icon {
   margin-right: 10px;
   fill: currentColor;
+
+  .header-contact__link:hover &,
+  .header-contact__link:focus & {
+    fill: var(--accent-text-color);
+  }
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
+.header-nav__item--accent {
+  color: var(--accent-text-color);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+
+    background: var(--accent-text-color);
+    border-radius: 2px;
+  }
 }
