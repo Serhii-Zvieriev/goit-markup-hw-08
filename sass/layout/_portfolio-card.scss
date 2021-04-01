@@ -5,19 +5,25 @@
   margin-top: -30px;
 }
 
-.portfolio-card li {
+.portfolio-card__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.portfolio-card a {
+.portfolio-card__link {
   display: block;
   text-decoration: none;
   font-family: inherit;
 
   box-shadow: 0 0 0 inherit;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .card-description {
@@ -26,33 +32,18 @@
   border-top: transparent;
 }
 
-.card-description h3 {
+.card-description__title {
   margin-bottom: 4px;
-}
-
-.portfolio-card-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.portfolio-card-text {
+.card-description__text {
   font-size: 16px;
   line-height: 1.97;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-
-.portfolio-card a:hover,
-.portfolio-card a:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-card a:hover .overlay,
-.portfolio-card a:focus .overlay {
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(0);
 }
 
 .thumb {
@@ -71,9 +62,15 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .portfolio-card a:hover &,
+  .portfolio-card a:focus & {
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+  }
 }
 
-.overlay-text {
+.overlay__text {
   padding: 63px 24px;
   overflow: auto;
 
