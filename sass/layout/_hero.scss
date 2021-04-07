@@ -93,18 +93,17 @@
 
 .hero__btn {
   cursor: pointer;
-
   padding: 10px 32px;
 
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
+  @include font(700, 16px, 1.875);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.875;
   letter-spacing: 0.06em;
 
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
-
   border: transparent;
   border-radius: 4px;
 }
