@@ -1,12 +1,19 @@
 .social-networks-list {
   display: flex;
-  justify-content: space-between;
-  margin: 0 32px;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  // justify-content: space-between;
+  // margin: 0 32px;
 }
 
 .social-networks-list__item {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-networks-list__link {
