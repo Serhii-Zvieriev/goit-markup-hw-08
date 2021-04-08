@@ -78,6 +78,24 @@ h3 {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -242,55 +260,60 @@ h3 {
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 480px;
-  height: 400px;
   text-align: center;
   justify-content: center;
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/mobile.jpg);
-  background-size: 480px 400px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+    height: auto;
+  }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/mobile@2x.jpg);
-    background-size: 480px 400px;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
-    height: 400px;
+    max-width: 768px;
+    height: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/tablet.jpg);
-    background-size: 768px 400px;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/tablet@2x.jpg);
-    background-size: 768px 400px;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    height: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/desktop.jpg);
-    background-size: 1600px 600px;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/desktop@2x.jpg);
-    background-size: 1600px 600px;
+    background-size: cover;
   }
 }
 
@@ -356,20 +379,20 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
 .features-list__card {
   margin-bottom: 30px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-@media screen and (max-width: 767px) {
-  .features-list__card {
-    max-width: 450px;
-    height: 120px;
-  }
 }
 
 .features-list__title {
@@ -382,12 +405,33 @@ h3 {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list__title {
+    text-align: start;
+  }
+}
+
 .features-list__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__text {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .doing {
+    padding: 0;
+  }
+  .doing__container {
+    display: none;
+  }
 }
 
 .doing__title {
@@ -437,24 +481,16 @@ h3 {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.team-list {
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .teamets-card {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  max-width: 480px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
