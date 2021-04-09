@@ -16,9 +16,16 @@
 
 <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
-            <nav class="header-nav">
+            <nav class="header-navigation">
+                
+                <button type="button" class="mobile-menu__button">
+                    <svg width="24" height="16">
+                        <use href="./images/icon.svg#icon-menu"></use>
+                    </svg>
+                </button>
+
                 <a lang="en" class="link-decoration logo logo--in-header" href="./index.html">Web<span class="logo--dark">Studio</span></a>
                 <ul class="header-nav">
                     <li class="header-nav__item"><a class="link-decoration header-nav__link header-nav__item--accent" href="./index.html">Студия</a></li>
@@ -39,7 +46,7 @@
                      +38 096 111 11 11</a></li>
                 </ul>
             </div>
-    </header> -->
+    </header>
     <!-- MAIN -->
     <main>
         <!--HERO-->
@@ -457,6 +464,7 @@
         </div>
     </footer>
 
+    <!-- MODAL ЗАКАЗАТЬ УСЛУГУ -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__close-btn" type="button" data-modal-close>
