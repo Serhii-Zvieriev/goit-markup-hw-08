@@ -11,6 +11,11 @@
   height: 580px;
   padding: 40px;
 
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -159,6 +164,9 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    @include font(400, 12px, 1.17);
+  }
 }
 
 .agreement-box__link {

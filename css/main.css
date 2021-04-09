@@ -889,6 +889,13 @@ h3 {
   background-color: #fff;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 .modal__close-btn {
   display: flex;
   justify-content: center;
@@ -1021,6 +1028,14 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .agreement-box__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .agreement-box__link {
