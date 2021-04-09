@@ -5,9 +5,21 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
+}
+
+.address-join--position {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .address-container {
@@ -17,6 +29,12 @@
 
 .address {
   margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .address li:not(:last-child) {
@@ -50,6 +68,9 @@
 }
 
 .join {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto 60px;
+  }
   width: 206px;
   height: 80px;
 }

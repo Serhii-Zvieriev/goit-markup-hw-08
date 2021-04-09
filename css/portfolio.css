@@ -111,8 +111,8 @@ h3 {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
@@ -218,9 +218,24 @@ h3 {
 }
 
 .footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-join--position {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .address-container {
@@ -230,6 +245,18 @@ h3 {
 
 .address {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .address {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-right: 70px;
+  }
 }
 
 .address li:not(:last-child) {
@@ -263,6 +290,12 @@ h3 {
 .join {
   width: 206px;
   height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .join {
+    margin: 0 auto 60px;
+  }
 }
 
 .join__title {
@@ -315,21 +348,42 @@ h3 {
   color: var(--white-text-color);
 }
 
-.submit__form {
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .submit__form {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .submit__form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .submit__form {
+    display: flex;
+  }
 }
 
 .submit__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
   background-color: transparent;
   color: var(--white-text-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .submit__input {
+    width: 358px;
+  }
 }
 
 .submit__input:focus {
