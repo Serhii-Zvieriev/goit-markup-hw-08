@@ -498,9 +498,16 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .portfolio-card__item {
+    display: flex;
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-card__item {
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
@@ -510,6 +517,13 @@ h3 {
   font-family: inherit;
   box-shadow: 0 0 0 inherit;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-card__link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .portfolio-card__link:hover, .portfolio-card__link:focus {
