@@ -3,6 +3,10 @@
   position: relative;
 }
 
+// .header-container {
+//   position: relative;
+// }
+
 .header-navigation,
 .header-nav,
 .header__container,
@@ -27,9 +31,9 @@
   .header-contact {
     display: none;
   }
-  .header-container {
-    position: relative;
-  }
+  // .header-container {
+  //   position: relative;
+  // }
 }
 
 @media screen and (min-width: 768px) {

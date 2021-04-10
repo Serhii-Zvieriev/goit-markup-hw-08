@@ -163,9 +163,6 @@ h3 {
   .header-contact {
     display: none;
   }
-  .header-container {
-    position: relative;
-  }
 }
 
 @media screen and (min-width: 768px) {

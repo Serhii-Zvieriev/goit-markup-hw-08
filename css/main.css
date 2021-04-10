@@ -213,9 +213,6 @@ h3 {
   .header-contact {
     display: none;
   }
-  .header-container {
-    position: relative;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -516,6 +513,7 @@ h3 {
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -1069,9 +1067,15 @@ h3 {
   background-color: #fff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
   .modal {
     width: 93.75%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
     height: 609px;
   }
 }
