@@ -533,10 +533,6 @@ h3 {
   }
 }
 
-.features-list {
-  width: 100%;
-}
-
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
@@ -680,10 +676,6 @@ h3 {
   }
 }
 
-.team-list {
-  width: 100%;
-}
-
 @media screen and (max-width: 767px) {
   .team-list {
     max-width: 480px;
@@ -772,8 +764,7 @@ h3 {
 }
 
 .client-list {
-  width: 100%;
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: -30px;
   display: flex;
 }
@@ -791,7 +782,7 @@ h3 {
 }
 
 .client-list__item {
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
   height: 92px;
 }
