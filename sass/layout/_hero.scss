@@ -73,8 +73,8 @@
   }
 }
 .hero__title {
-  width: 360px;
-  // max-width: 480px;
+  // width: 360px;
+  max-width: 480px;
 
   margin: 0 auto 30px;
   @include font(900, 26px, 1.62);

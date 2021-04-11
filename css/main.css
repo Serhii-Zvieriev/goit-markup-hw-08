@@ -207,33 +207,6 @@ h3 {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
-  .header-nav,
-  .header-contact {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu__button {
-    display: none;
-  }
-}
-
-.mobile-menu__button {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-.mobile-menu__button:hover, .mobile-menu__button:focus {
-  fill: var(--accent-text-color);
-}
-
 .header-nav__link,
 .header-contact__link {
   padding-top: 32px;
@@ -263,10 +236,10 @@ h3 {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contact {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -319,6 +292,33 @@ h3 {
   width: 100%;
   background: var(--accent-text-color);
   border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav,
+  .header-contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  fill: var(--accent-text-color);
 }
 
 .mobile-menu {
@@ -493,7 +493,7 @@ h3 {
 }
 
 .hero__title {
-  width: 360px;
+  max-width: 480px;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -531,6 +531,10 @@ h3 {
   .features {
     padding-bottom: 0;
   }
+}
+
+.features-list {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -676,6 +680,10 @@ h3 {
   }
 }
 
+.team-list {
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .team-list {
     max-width: 480px;
@@ -764,6 +772,7 @@ h3 {
 }
 
 .client-list {
+  width: 100%;
   margin-right: -30px;
   margin-bottom: -30px;
   display: flex;
@@ -787,7 +796,7 @@ h3 {
   height: 92px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .client-list__item {
     flex-basis: calc(100% / 2 - 30px);
   }
@@ -1052,7 +1061,6 @@ h3 {
   position: absolute;
   z-index: 1;
   width: 528px;
-  height: 580px;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -1066,7 +1074,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;

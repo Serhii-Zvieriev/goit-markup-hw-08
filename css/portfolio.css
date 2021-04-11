@@ -157,33 +157,6 @@ h3 {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
-  .header-nav,
-  .header-contact {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu__button {
-    display: none;
-  }
-}
-
-.mobile-menu__button {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-.mobile-menu__button:hover, .mobile-menu__button:focus {
-  fill: var(--accent-text-color);
-}
-
 .header-nav__link,
 .header-contact__link {
   padding-top: 32px;
@@ -213,10 +186,10 @@ h3 {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contact {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -269,6 +242,33 @@ h3 {
   width: 100%;
   background: var(--accent-text-color);
   border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav,
+  .header-contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  fill: var(--accent-text-color);
 }
 
 .mobile-menu {

@@ -16,11 +16,14 @@
 }
 
 .client-list {
+  width: 100%;
   margin-right: -30px;
   margin-bottom: -30px;
   display: flex;
+
   @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
+    // justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
@@ -31,9 +34,10 @@
 .client-list__item {
   margin-right: 30px;
   margin-bottom: 30px;
+
   height: 92px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     flex-basis: calc(100% / 2 - 30px);
   }
 
